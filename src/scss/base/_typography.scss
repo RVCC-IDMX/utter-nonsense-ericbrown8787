@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Commissioner";
+  src: url("../fonts/Commissioner[FLAR,VOLM,slnt,wght].ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Science Gothic";
+  src: url("../fonts/ScienceGothic[YOPQ,wdth,wght,slnt].ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+}
+
+$main-font:"Science Gothic";
+$display-font:"Commissioner";

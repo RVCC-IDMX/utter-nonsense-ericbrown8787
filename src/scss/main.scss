@@ -1,33 +1,7 @@
 //===Open Props Components===
-@import "/node_modules/open-props/normalize.min.css";
-@import "/node_modules/open-props/open-props.min.css";
+@use "./node_modules/open-props/open-props.min.css";
+@use "./node_modules/open-props/normalize.min.css";
 
 //===SASS===
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: var(--font-sans);
-  font-size: var(--font-size-3);
-}
-
-h1 {
-  font-size: var(--font-size-fluid-3);
-}
-
-h2 {
-  font-size: var(--font-size-fluid-2);
-}
-
-.intro {
-  background: var(--surface-2);
-  color: var(--gray-2);
-  padding-block: var(--size-9);
-  margin-block-end: var(--size-9);
-  box-shadow: var(--shadow-3);
-}
+@use "./base/reset";
+@use "./pages/home";
