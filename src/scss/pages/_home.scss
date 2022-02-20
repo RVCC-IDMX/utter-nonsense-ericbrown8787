@@ -1,11 +1,6 @@
 @use "../utilities/variables" as var;
 @use "../base/typography" as type;
 
-h1,
-h2 {
-  font-family: type.$display-font;
-}
-
-p {
-  font-family: type.$main-font;
+.image-container {
+  width: 300px;
 }

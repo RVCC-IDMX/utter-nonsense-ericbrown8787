@@ -1,7 +1,7 @@
 //===Open Props Components===
-@use "./node_modules/open-props/open-props.min.css";
 @use "./node_modules/open-props/normalize.min.css";
+@use "./node_modules/open-props/open-props.min.css";
 
 //===SASS===
-@use "./base/reset";
-@use "./pages/home";
+@use "base/reset";
+@use "pages/home";
