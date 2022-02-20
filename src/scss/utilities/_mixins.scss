@@ -1,0 +1,30 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-around-column {
+  @include flex-around;
+  flex-direction: column;
+}
+
+@mixin text-box-template {
+  box-shadow: var(--shadow-5);
+}
