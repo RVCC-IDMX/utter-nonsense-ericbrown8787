@@ -1,0 +1,34 @@
+@use "../utilities/mixins" as mixin;
+@use "../base/typography" as type;
+.poem {
+  @include mixin.flex-center-column();
+  font-variation-settings: "wght" 400, "opsz" 15;
+  color: var(--gray-2);
+  gap: 20px;
+
+  &__image {
+    max-width: 800px;
+    box-shadow: var(--shadow-5);
+  }
+
+  &__text {
+    padding-block: 25px;
+    padding-inline: 35px;
+    @include mixin.text-box-template;
+    background-color: var(--gray-2);
+    color: var(--gray-9);
+    line-height: --font-lineheight-4;
+    text-align: left;
+    box-shadow: var(--shadow-3);
+    font-size: var(--font-size-fluid-1);
+    line-height: 2.5;
+    border-radius: var(--radius-2);
+
+    &--line {
+      display: block;
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+}

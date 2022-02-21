@@ -1,84 +1,14 @@
 @use "../utilities/mixins" as mixin;
 @use "../base/typography" as type;
 
+@use "../components/header";
+@use "../components/poem";
+@use "../components/footer";
+
 body {
   @include mixin.flex-around-column();
   font-family: type.$body-font;
   background: var(--gradient-15);
   background-size: cover;
   gap: 20px;
-}
-
-.header {
-  @include mixin.flex-center-column;
-  gap: 8px;
-  text-align: center;
-  width: 100%;
-  max-width: 1000px;
-  background: var(--gradient-23);
-  border-radius: var(--radius-blob-1);
-  padding-block: 55px;
-  padding-inline: 50px;
-  box-shadow: var(--shadow-5);
-
-  &__title {
-    font-family: type.$display-font;
-    font-size: var(--size-fluid-3);
-    font-variation-settings: "wght" 650, "YOPQ" 49;
-    @media screen and (min-width: 768px) {
-      white-space: nowrap;
-    }
-  }
-
-  &__from {
-    &--book-title {
-      font-variation-settings: "wght" 650, "opsz" 13;
-      font-size: var(--size-fluid 1);
-      font-style: italic;
-    }
-  }
-
-  &__by {
-    &--author {
-      font-variation-settings: "wght" 550, "opsz" 13;
-    }
-  }
-}
-
-.poem {
-  @include mixin.flex-center-column();
-  font-variation-settings: "wght" 400, "opsz" 15;
-  color: var(--gray-2);
-  gap: 20px;
-
-  &__image {
-    max-width: 800px;
-    box-shadow: var(--shadow-5);
-  }
-
-  &__text {
-    padding-block: 25px;
-    padding-inline: 35px;
-    @include mixin.text-box-template;
-    background-color: var(--gray-2);
-    color: var(--gray-9);
-    line-height: --font-lineheight-4;
-    text-align: left;
-    box-shadow: var(--shadow-3);
-    font-size: var(--font-size-fluid-1);
-    line-height: 2.5;
-    border-radius: var(--radius-2);
-
-    &--line {
-      display: block;
-      &:last-child {
-        text-align: right;
-      }
-    }
-  }
-}
-
-.footer {
-  text-align: center;
-  padding-block: 20px;
 }

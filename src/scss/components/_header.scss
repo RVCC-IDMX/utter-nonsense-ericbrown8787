@@ -1,0 +1,38 @@
+@use "../utilities/mixins" as mixin;
+@use "../base/typography" as type;
+
+.header {
+  @include mixin.flex-center-column;
+  gap: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+  background: var(--gradient-23);
+  border-radius: var(--radius-blob-1);
+  padding-block: 55px;
+  padding-inline: 50px;
+  box-shadow: var(--shadow-5);
+
+  &__title {
+    font-family: type.$display-font;
+    font-size: var(--size-fluid-3);
+    font-variation-settings: "wght" 650, "YOPQ" 49;
+    @media screen and (min-width: 768px) {
+      white-space: nowrap;
+    }
+  }
+
+  &__from {
+    &--book-title {
+      font-variation-settings: "wght" 650, "opsz" 13;
+      font-size: var(--size-fluid 1);
+      font-style: italic;
+    }
+  }
+
+  &__by {
+    &--author {
+      font-variation-settings: "wght" 550, "opsz" 13;
+    }
+  }
+}
