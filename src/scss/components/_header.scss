@@ -1,8 +1,14 @@
 @use "../utilities/mixins" as mixin;
 @use "../base/typography" as type;
 
+:where(html) {
+  --shadow-strength: 25%;
+  --shadow-color: 220 40% 2%;
+}
+
 .header {
   @include mixin.flex-center-column;
+  color: var(--gray-1);
   gap: 8px;
   text-align: center;
   width: 100%;
@@ -11,9 +17,12 @@
   border-radius: var(--radius-blob-1);
   padding-block: 55px;
   padding-inline: 50px;
-  box-shadow: var(--shadow-5);
+  box-shadow: var(--shadow-5) !important;
+  margin-block-end: 35px;
+  margin-inline: auto;
 
   &__title {
+    color: var(--gray-1);
     font-family: type.$display-font;
     font-size: var(--size-fluid-3);
     font-variation-settings: "wght" 650, "YOPQ" 49;

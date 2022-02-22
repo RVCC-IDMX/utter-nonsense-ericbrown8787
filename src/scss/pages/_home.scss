@@ -6,9 +6,9 @@
 @use "../components/footer";
 
 body {
-  @include mixin.flex-around-column();
+  // @include mixin.flex-around-column();
+  padding: 16px;
   font-family: type.$body-font;
   background: var(--gradient-15);
   background-size: cover;
-  gap: 20px;
 }

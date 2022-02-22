@@ -4,7 +4,7 @@
   @include mixin.flex-center-column();
   font-variation-settings: "wght" 400, "opsz" 15;
   color: var(--gray-2);
-  gap: 20px;
+  gap: 35px;
 
   &__image {
     max-width: 800px;
